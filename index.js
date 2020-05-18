@@ -1,4 +1,5 @@
 const express = require("express");
+const shortid = require('shortid');
 const server = express();
 
 server.use(express.json());
@@ -12,8 +13,8 @@ server.post("/api/users", (req,res) => {
     totalUsers.push(users);
     res.status(201).json(users);
 
-})
-const PORT = 5000;
+});
+const PORT = 4000;
 
 
 server.listen(PORT, () => 
