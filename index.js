@@ -20,6 +20,10 @@ server.get("/api/users/", (req,res) => {
         "User 1": "Aaron",
         "user 2": "John Cena",
     }})
+});
+// GET	/api/users/:id	Returns the user object with the specified id.
+server.get("/api/users/:id", (req,res) => {
+    res.status(200).json(users);
 })
 const PORT = 4000;
 
