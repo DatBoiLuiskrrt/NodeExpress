@@ -23,8 +23,9 @@ server.get("/api/users/", (req,res) => {
 });
 // GET	/api/users/:id	Returns the user object with the specified id.
 server.get("/api/users/:id", (req,res) => {
-    res.status(200).json(users);
+    res.status(200).json(totalUsers);
 })
+
 const PORT = 4000;
 
 
